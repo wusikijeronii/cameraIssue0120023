@@ -1,0 +1,353 @@
+Determining if the __GLIBC__ exist failed with the following output:
+Change Dir: C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/NINJA-~1/ninja.exe cmTC_294b0 && [1/2] Building C object CMakeFiles/cmTC_294b0.dir/CheckSymbolExists.c.obj
+FAILED: CMakeFiles/cmTC_294b0.dir/CheckSymbolExists.c.obj 
+C:\msys64\clang64\bin\clang.exe    -MD -MT CMakeFiles/cmTC_294b0.dir/CheckSymbolExists.c.obj -MF CMakeFiles\cmTC_294b0.dir\CheckSymbolExists.c.obj.d -o CMakeFiles/cmTC_294b0.dir/CheckSymbolExists.c.obj -c C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: use of undeclared identifier '__GLIBC__'
+  return ((int*)(&__GLIBC__))[argc];
+                  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __GLIBC__
+  return ((int*)(&__GLIBC__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_X86 failed with the following output:
+Change Dir: C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/NINJA-~1/ninja.exe cmTC_ffaca && [1/2] Building C object CMakeFiles/cmTC_ffaca.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_ffaca.dir/src.c.obj 
+C:\msys64\clang64\bin\clang.exe -DCHECK_CPU_ARCHITECTURE_X86   -MD -MT CMakeFiles/cmTC_ffaca.dir/src.c.obj -MF CMakeFiles\cmTC_ffaca.dir\src.c.obj.d -o CMakeFiles/cmTC_ffaca.dir/src.c.obj -c C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/src.c
+C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/src.c:6:3: error: use of undeclared identifier 'choke'
+  choke
+  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__i386__) || defined(__i486__) || defined(__i586__) || defined(__i686__) ||defined( __i386) || defined(_M_IX86)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_ARM32 failed with the following output:
+Change Dir: C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/NINJA-~1/ninja.exe cmTC_4fff4 && [1/2] Building C object CMakeFiles/cmTC_4fff4.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_4fff4.dir/src.c.obj 
+C:\msys64\clang64\bin\clang.exe -DCHECK_CPU_ARCHITECTURE_ARM32   -MD -MT CMakeFiles/cmTC_4fff4.dir/src.c.obj -MF CMakeFiles\cmTC_4fff4.dir\src.c.obj.d -o CMakeFiles/cmTC_4fff4.dir/src.c.obj -c C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/src.c
+C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/src.c:6:3: error: use of undeclared identifier 'choke'
+  choke
+  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__arm__) || defined(_M_ARM)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_ARM64 failed with the following output:
+Change Dir: C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/NINJA-~1/ninja.exe cmTC_743d6 && [1/2] Building C object CMakeFiles/cmTC_743d6.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_743d6.dir/src.c.obj 
+C:\msys64\clang64\bin\clang.exe -DCHECK_CPU_ARCHITECTURE_ARM64   -MD -MT CMakeFiles/cmTC_743d6.dir/src.c.obj -MF CMakeFiles\cmTC_743d6.dir\src.c.obj.d -o CMakeFiles/cmTC_743d6.dir/src.c.obj -c C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/src.c
+C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/src.c:6:3: error: use of undeclared identifier 'choke'
+  choke
+  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__aarch64__) || defined(_M_ARM64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test CHECK_CPU_ARCHITECTURE_LOONGARCH64 failed with the following output:
+Change Dir: C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/NINJA-~1/ninja.exe cmTC_dab55 && [1/2] Building C object CMakeFiles/cmTC_dab55.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_dab55.dir/src.c.obj 
+C:\msys64\clang64\bin\clang.exe -DCHECK_CPU_ARCHITECTURE_LOONGARCH64   -MD -MT CMakeFiles/cmTC_dab55.dir/src.c.obj -MF CMakeFiles\cmTC_dab55.dir\src.c.obj.d -o CMakeFiles/cmTC_dab55.dir/src.c.obj -c C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/src.c
+C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/src.c:6:3: error: use of undeclared identifier 'choke'
+  choke
+  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+int main(int argc, char *argv[]) {
+#if defined(__loongarch64)
+  return 0;
+#else
+  choke
+#endif
+}
+
+Performing C SOURCE FILE Test HAVE_WL_VERSION_SCRIPT failed with the following output:
+Change Dir: C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/NINJA-~1/ninja.exe cmTC_e8de8 && [1/2] Building C object CMakeFiles/cmTC_e8de8.dir/src.c.obj
+[2/2] Linking C executable cmTC_e8de8.exe
+FAILED: cmTC_e8de8.exe 
+cmd.exe /C "cd . && C:\msys64\clang64\bin\clang.exe  -Wl,--version-script=C:/Users/alekesej/Documents/Programming/cameraTest/external/sdl/src/dynapi/SDL_dynapi.sym CMakeFiles/cmTC_e8de8.dir/src.c.obj -o cmTC_e8de8.exe -Wl,--out-implib,libcmTC_e8de8.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+lld: error: unknown argument: --version-script=C:/Users/alekesej/Documents/Programming/cameraTest/external/sdl/src/dynapi/SDL_dynapi.sym
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAVE_GCC_PREFERRED_STACK_BOUNDARY failed with the following output:
+Change Dir: C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/NINJA-~1/ninja.exe cmTC_c96db && [1/2] Building C object CMakeFiles/cmTC_c96db.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_c96db.dir/src.c.obj 
+C:\msys64\clang64\bin\clang.exe -DHAVE_GCC_PREFERRED_STACK_BOUNDARY  -idirafter "C:/Users/alekesej/Documents/Programming/cameraTest/external/sdl/src/video/khronos"  -mpreferred-stack-boundary=2 -MD -MT CMakeFiles/cmTC_c96db.dir/src.c.obj -MF CMakeFiles\cmTC_c96db.dir\src.c.obj.d -o CMakeFiles/cmTC_c96db.dir/src.c.obj -c C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/src.c
+clang: error: unknown argument: '-mpreferred-stack-boundary=2'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int x = 0; int main(int argc, char **argv) { return 0; }
+Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
+Change Dir: C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/NINJA-~1/ninja.exe cmTC_a022f && [1/2] Building C object CMakeFiles/cmTC_a022f.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_a022f.dir/src.c.obj 
+C:\msys64\clang64\bin\clang.exe -DHAVE_ALTIVEC_H_HDR  -idirafter "C:/Users/alekesej/Documents/Programming/cameraTest/external/sdl/src/video/khronos"  -maltivec -MD -MT CMakeFiles/cmTC_a022f.dir/src.c.obj -MF CMakeFiles\cmTC_a022f.dir\src.c.obj.d -o CMakeFiles/cmTC_a022f.dir/src.c.obj -c C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/src.c
+clang: warning: argument unused during compilation: '-maltivec' [-Wunused-command-line-argument]
+In file included from C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/src.c:2:
+C:/msys64/clang64/lib/clang/15.0.5/include/altivec.h:13:2: error: "AltiVec support not enabled"
+#error "AltiVec support not enabled"
+ ^
+C:/msys64/clang64/lib/clang/15.0.5/include/altivec.h:50:19: error: unknown type name 'vector'
+static __inline__ vector signed char __ATTRS_o_ai vec_perm(
+                  ^
+C:/msys64/clang64/lib/clang/15.0.5/include/altivec.h:51:5: error: unknown type name 'vector'
+    vector signed char __a, vector signed char __b, vector unsigned char __c);
+    ^
+C:/msys64/clang64/lib/clang/15.0.5/include/altivec.h:51:29: error: unknown type name 'vector'
+    vector signed char __a, vector signed char __b, vector unsigned char __c);
+                            ^
+C:/msys64/clang64/lib/clang/15.0.5/include/altivec.h:51:53: error: unknown type name 'vector'
+    vector signed char __a, vector signed char __b, vector unsigned char __c);
+                                                    ^
+C:/msys64/clang64/lib/clang/15.0.5/include/altivec.h:53:19: error: unknown type name 'vector'
+static __inline__ vector unsigned char __ATTRS_o_ai
+                  ^
+C:/msys64/clang64/lib/clang/15.0.5/include/altivec.h:54:10: error: unknown type name 'vector'
+vec_perm(vector unsigned char __a, vector unsigned char __b,
+         ^
+C:/msys64/clang64/lib/clang/15.0.5/include/altivec.h:54:36: error: unknown type name 'vector'
+vec_perm(vector unsigned char __a, vector unsigned char __b,
+                                   ^
+C:/msys64/clang64/lib/clang/15.0.5/include/altivec.h:55:10: error: unknown type name 'vector'
+         vector unsigned char __c);
+         ^
+C:/msys64/clang64/lib/clang/15.0.5/include/altivec.h:57:19: error: unknown type name 'vector'
+static __inline__ vector bool char __ATTRS_o_ai
+                  ^
+C:/msys64/clang64/lib/clang/15.0.5/include/altivec.h:57:8: error: 'inline' can only appear on functions
+static __inline__ vector bool char __ATTRS_o_ai
+       ^
+C:/msys64/clang64/lib/clang/15.0.5/include/altivec.h:57:30: error: expected ';' after top level declarator
+static __inline__ vector bool char __ATTRS_o_ai
+                             ^
+C:/msys64/clang64/lib/clang/15.0.5/include/altivec.h:58:10: error: unknown type name 'vector'
+vec_perm(vector bool char __a, vector bool char __b, vector unsigned char __c);
+         ^
+C:/msys64/clang64/lib/clang/15.0.5/include/altivec.h:58:22: error: expected ')'
+vec_perm(vector bool char __a, vector bool char __b, vector unsigned char __c);
+                     ^
+C:/msys64/clang64/lib/clang/15.0.5/include/altivec.h:58:9: note: to match this '('
+vec_perm(vector bool char __a, vector bool char __b, vector unsigned char __c);
+        ^
+C:/msys64/clang64/lib/clang/15.0.5/include/altivec.h:60:19: error: unknown type name 'vector'
+static __inline__ vector short __ATTRS_o_ai vec_perm(vector signed short __a,
+                  ^
+C:/msys64/clang64/lib/clang/15.0.5/include/altivec.h:60:54: error: unknown type name 'vector'
+static __inline__ vector short __ATTRS_o_ai vec_perm(vector signed short __a,
+                                                     ^
+C:/msys64/clang64/lib/clang/15.0.5/include/altivec.h:61:54: error: unknown type name 'vector'
+                                                     vector signed short __b,
+                                                     ^
+C:/msys64/clang64/lib/clang/15.0.5/include/altivec.h:62:54: error: unknown type name 'vector'
+                                                     vector unsigned char __c);
+                                                     ^
+C:/msys64/clang64/lib/clang/15.0.5/include/altivec.h:64:19: error: unknown type name 'vector'
+static __inline__ vector unsigned short __ATTRS_o_ai
+                  ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+          #include <altivec.h>
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { return 0; }
+Performing C SOURCE FILE Test CPU_SUPPORTS_ALTIVEC failed with the following output:
+Change Dir: C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/NINJA-~1/ninja.exe cmTC_c6388 && [1/2] Building C object CMakeFiles/cmTC_c6388.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_c6388.dir/src.c.obj 
+C:\msys64\clang64\bin\clang.exe -DCPU_SUPPORTS_ALTIVEC  -idirafter "C:/Users/alekesej/Documents/Programming/cameraTest/external/sdl/src/video/khronos"  -maltivec -MD -MT CMakeFiles/cmTC_c6388.dir/src.c.obj -MF CMakeFiles\cmTC_c6388.dir\src.c.obj.d -o CMakeFiles/cmTC_c6388.dir/src.c.obj -c C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/src.c
+clang: warning: argument unused during compilation: '-maltivec' [-Wunused-command-line-argument]
+C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/src.c:2:11: error: unknown type name 'vector'
+          vector unsigned int vzero() {
+          ^
+C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/src.c:3:22: warning: call to undeclared function 'vec_splat_u32'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+              return vec_splat_u32(0);
+                     ^
+1 warning and 1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { return 0; }
+Performing C SOURCE FILE Test HAVE_XINPUT_GAMEPAD_EX failed with the following output:
+Change Dir: C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/NINJA-~1/ninja.exe cmTC_6059e && [1/2] Building C object CMakeFiles/cmTC_6059e.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_6059e.dir/src.c.obj 
+C:\msys64\clang64\bin\clang.exe -DHAVE_XINPUT_GAMEPAD_EX  -idirafter "C:/Users/alekesej/Documents/Programming/cameraTest/external/sdl/src/video/khronos" -MD -MT CMakeFiles/cmTC_6059e.dir/src.c.obj -MF CMakeFiles\cmTC_6059e.dir\src.c.obj.d -o CMakeFiles/cmTC_6059e.dir/src.c.obj -c C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/src.c
+C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/src.c:4:7: error: unknown type name 'XINPUT_GAMEPAD_EX'; did you mean 'XINPUT_GAMEPAD'?
+      XINPUT_GAMEPAD_EX x1;
+      ^~~~~~~~~~~~~~~~~
+      XINPUT_GAMEPAD
+C:/msys64/clang64/include/xinput.h:179:3: note: 'XINPUT_GAMEPAD' declared here
+} XINPUT_GAMEPAD, *PXINPUT_GAMEPAD;
+  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      #include <windows.h>
+      #include <xinput.h>
+      XINPUT_GAMEPAD_EX x1;
+      int main(int argc, char **argv) { return 0; }
+Performing C SOURCE FILE Test HAVE_XINPUT_STATE_EX failed with the following output:
+Change Dir: C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/NINJA-~1/ninja.exe cmTC_5bd64 && [1/2] Building C object CMakeFiles/cmTC_5bd64.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_5bd64.dir/src.c.obj 
+C:\msys64\clang64\bin\clang.exe -DHAVE_XINPUT_STATE_EX  -idirafter "C:/Users/alekesej/Documents/Programming/cameraTest/external/sdl/src/video/khronos" -MD -MT CMakeFiles/cmTC_5bd64.dir/src.c.obj -MF CMakeFiles\cmTC_5bd64.dir\src.c.obj.d -o CMakeFiles/cmTC_5bd64.dir/src.c.obj -c C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/src.c
+C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp/src.c:4:7: error: unknown type name 'XINPUT_STATE_EX'; did you mean 'XINPUT_STATE'?
+      XINPUT_STATE_EX s1;
+      ^~~~~~~~~~~~~~~
+      XINPUT_STATE
+C:/msys64/clang64/include/xinput.h:184:3: note: 'XINPUT_STATE' declared here
+} XINPUT_STATE, *PXINPUT_STATE;
+  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+      #include <windows.h>
+      #include <xinput.h>
+      XINPUT_STATE_EX s1;
+      int main(int argc, char **argv) { return 0; }
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/NINJA-~1/ninja.exe cmTC_fc051 && [1/2] Building C object CMakeFiles/cmTC_fc051.dir/src.c.obj
+[2/2] Linking C executable cmTC_fc051.exe
+FAILED: cmTC_fc051.exe 
+cmd.exe /C "cd . && C:\msys64\clang64\bin\clang.exe   CMakeFiles/cmTC_fc051.dir/src.c.obj -o cmTC_fc051.exe -Wl,--out-implib,libcmTC_fc051.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+ld.lld: error: undefined symbol: pthread_create
+>>> referenced by CMakeFiles/cmTC_fc051.dir/src.c.obj:(main)
+
+ld.lld: error: undefined symbol: pthread_detach
+>>> referenced by CMakeFiles/cmTC_fc051.dir/src.c.obj:(main)
+
+ld.lld: error: undefined symbol: pthread_cancel
+>>> referenced by CMakeFiles/cmTC_fc051.dir/src.c.obj:(main)
+
+ld.lld: error: undefined symbol: pthread_join
+>>> referenced by CMakeFiles/cmTC_fc051.dir/src.c.obj:(main)
+
+ld.lld: error: undefined symbol: pthread_exit
+>>> referenced by CMakeFiles/cmTC_fc051.dir/src.c.obj:(main)
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~1/NINJA-~1/ninja.exe cmTC_45b9d && [1/2] Building C object CMakeFiles/cmTC_45b9d.dir/CheckFunctionExists.c.obj
+[2/2] Linking C executable cmTC_45b9d.exe
+FAILED: cmTC_45b9d.exe 
+cmd.exe /C "cd . && C:\msys64\clang64\bin\clang.exe -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_45b9d.dir/CheckFunctionExists.c.obj -o cmTC_45b9d.exe -Wl,--out-implib,libcmTC_45b9d.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lpthreads  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+lld: error: unable to find library -lpthreads
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+

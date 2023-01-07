@@ -1,0 +1,22 @@
+[
+{
+  "directory": "C:/Users/alekesej/Documents/Programming/cameraTest/build",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -DSDL_MAIN_HANDLED -IC:/msys64/clang64/include/SDL2 -IC:/Users/alekesej/Documents/Programming/cameraTest/external/glm -g -std=c++20 -o CMakeFiles\\cameratest.dir\\main.obj -c C:\\Users\\alekesej\\Documents\\Programming\\cameraTest\\main.cpp",
+  "file": "C:\\Users\\alekesej\\Documents\\Programming\\cameraTest\\main.cpp"
+},
+{
+  "directory": "C:/Users/alekesej/Documents/Programming/cameraTest/build",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -DSDL_MAIN_HANDLED -IC:/msys64/clang64/include/SDL2 -IC:/Users/alekesej/Documents/Programming/cameraTest/external/glm -g -std=c++20 -o CMakeFiles\\cameratest.dir\\camera.obj -c C:\\Users\\alekesej\\Documents\\Programming\\cameraTest\\camera.cpp",
+  "file": "C:\\Users\\alekesej\\Documents\\Programming\\cameraTest\\camera.cpp"
+},
+{
+  "directory": "C:/Users/alekesej/Documents/Programming/cameraTest/build",
+  "command": "C:\\msys64\\clang64\\bin\\clang++.exe -DSDL_MAIN_HANDLED -IC:/msys64/clang64/include/SDL2 -IC:/Users/alekesej/Documents/Programming/cameraTest/external/glm -g -std=c++20 -o CMakeFiles\\cameratest.dir\\shader.obj -c C:\\Users\\alekesej\\Documents\\Programming\\cameraTest\\shader.cpp",
+  "file": "C:\\Users\\alekesej\\Documents\\Programming\\cameraTest\\shader.cpp"
+},
+{
+  "directory": "C:/Users/alekesej/Documents/Programming/cameraTest/build",
+  "command": "C:\\msys64\\clang64\\bin\\clang.exe -DSDL_MAIN_HANDLED -IC:/msys64/clang64/include/SDL2 -IC:/Users/alekesej/Documents/Programming/cameraTest/external/glm -g -o CMakeFiles\\cameratest.dir\\gl_core_4_5.obj -c C:\\Users\\alekesej\\Documents\\Programming\\cameraTest\\gl_core_4_5.c",
+  "file": "C:\\Users\\alekesej\\Documents\\Programming\\cameraTest\\gl_core_4_5.c"
+}
+]

@@ -1,0 +1,3 @@
+C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/cameratest.dir
+C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/edit_cache.dir
+C:/Users/alekesej/Documents/Programming/cameraTest/build/CMakeFiles/rebuild_cache.dir
